@@ -1,5 +1,12 @@
 import { type FormReturnType, type Schema, form } from "@tarcltd/form";
 import { type ComputedRef, computed, reactive } from "vue";
+export {
+  type FormReturnType,
+  type Schema,
+  type SchemaObject,
+  type SchemaField,
+  type SchemaFieldType,
+} from "@tarcltd/form";
 
 /**
  * Generate a form object with Zod validation from a schema definition.

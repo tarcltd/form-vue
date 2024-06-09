@@ -8,6 +8,7 @@ describe("vue", () => {
         properties: {
           string: {
             type: "string",
+            name: "string",
             enum: ["test"],
           },
         },

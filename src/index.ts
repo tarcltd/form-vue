@@ -5,6 +5,10 @@ export {
   type Schema,
   type SchemaField,
   type SchemaFieldType,
+  deep as useDeep,
+  reForm as useReForm,
+  nameReForm as useNameReForm,
+  groupReForm as useGroupReForm,
 } from "@tarcltd/form";
 
 /**
@@ -22,6 +26,7 @@ export {
  * - `reset`: Reset the form to its default values.
  * - `isValid`: A computed property that returns whether the form is valid.
  */
+/* biome-ignore lint/suspicious/noExplicitAny: */
 export function useForm<T = Record<string, any>>(
   schema: Schema,
   options: Partial<{

@@ -1,6 +1,6 @@
 {
   "name": "@tarcltd/form-vue",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Create a JS object for use in form UI, Zod schema, and various utilities, from a simple JSON object.",
   "scripts": {
     "install": "tsx scripts/reversion.ts",
@@ -13,7 +13,7 @@
   "author": "TARC Ltd. () <support@tarc.ltd>",
   "license": "MIT",
   "dependencies": {
-    "@tarcltd/form": "npm:@jsr/tarcltd__form@^1.0.8",
+    "@tarcltd/form": "npm:@jsr/tarcltd__form@^1.0.9",
     "vue": "^3.0.0"
   },
   "devDependencies": {

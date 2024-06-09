@@ -1,9 +1,8 @@
-import { type FormReturnType, type Schema, form } from "@tarcltd/form";
+import { type FormReturnType, type Schema, createForm } from "@tarcltd/form";
 import { type ComputedRef, computed, reactive } from "vue";
 export {
   type FormReturnType,
   type Schema,
-  type SchemaObject,
   type SchemaField,
   type SchemaFieldType,
 } from "@tarcltd/form";
@@ -23,7 +22,7 @@ export {
  * - `reset`: Reset the form to its default values.
  * - `isValid`: A computed property that returns whether the form is valid.
  */
-function useForm<T = Record<string, any>>(
+export function useForm<T = Record<string, any>>(
   schema: Schema,
   options: Partial<{
     /* biome-ignore lint/suspicious/noExplicitAny: */
@@ -37,7 +36,7 @@ function useForm<T = Record<string, any>>(
   isValid: ComputedRef<boolean>;
 } & T {
   const state = reactive({});
-  const ret = form<T>(schema, state, options);
+  const ret = createForm<T>(schema, state, options);
 
   return {
     ...ret,

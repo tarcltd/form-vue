@@ -7,6 +7,8 @@ export {
   type SchemaFieldType,
   type SchemaObject,
   type SchemaString,
+  type SchemaStringDate,
+  type SchemaStringDatetime,
   type SchemaNumber,
   type SchemaInteger,
   type SchemaBoolean,

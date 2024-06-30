@@ -1,6 +1,6 @@
 {
   "name": "@tarcltd/form-vue",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Create a JS object for use in form UI, Zod schema, and various utilities, from a simple JSON object.",
   "scripts": {
     "install": "tsx scripts/reversion.ts",
@@ -9,19 +9,25 @@
     "test:ci": "vitest run --coverage",
     "publish": "jsr publish"
   },
-  "keywords": [],
-  "author": "TARC Ltd. () <support@tarc.ltd>",
+  "keywords": [
+    "form",
+    "zod",
+    "json",
+    "schema",
+    "ui"
+  ],
+  "author": "TARC Ltd. (tarc.ltd) <support@tarc.ltd>",
   "license": "MIT",
   "dependencies": {
-    "@tarcltd/form": "npm:@jsr/tarcltd__form@^1.0.12",
+    "@tarcltd/form": "npm:@jsr/tarcltd__form@^1.0.13",
     "vue": "^3.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.7.3",
-    "@types/node": "^20.12.13",
+    "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20.14.9",
     "@vitest/coverage-v8": "^1.6.0",
     "jsr": "^0.12.4",
-    "tsx": "^4.11.0",
+    "tsx": "^4.16.0",
     "vitest": "^1.6.0"
   }
 }
